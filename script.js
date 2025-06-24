@@ -58,3 +58,36 @@ navLinks.forEach((link) => {
     window.addEventListener('scroll', animateOnScroll);
     animateOnScroll(); // Run once on load
 });
+
+ // This is for the toggle between light and dark mode functionality
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('themeToggle');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  
+  // Check for saved theme or use preferred color scheme
+  const currentTheme = localStorage.getItem('theme') || 
+                      (prefersDarkScheme.matches ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  
+  // Set initial icon state
+  if (currentTheme === 'light') {
+    themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+  } else {
+    themeToggle.setAttribute('aria-label', 'Switch to light mode');
+  }
+  
+  // Toggle theme on button click
+  themeToggle.addEventListener('click', function() {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    console.log("I am working")
+    
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    
+    // Update ARIA label
+    this.setAttribute('aria-label', 
+      newTheme === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
+  });
+});
