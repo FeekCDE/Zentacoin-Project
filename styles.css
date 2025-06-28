@@ -285,7 +285,6 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   padding: 0.8rem 1.8rem;
   border-radius: 50px;
   font-weight: 600;
@@ -342,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
-  margin-left: 1rem;
+  margin-left: 0.2rem;
 }
 
 .btn-secondary:hover {
