@@ -2,15 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZentaCoin | $ZEN - Meme Coin with Spirituality on Solana</title>
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ZentaCoin - Solana Meme Coin with Spiritual Energy</title>
     <meta
       name="description"
-      content="ZentaCoin ($ZEN) is a meme coin built on the Solana blockchain that combines Zen philosophy, community vibes, and secure tokenomics for a mindful crypto journey."
+      content="ZentaCoin is a spiritually charged meme coin built on Solana. Join the $ZEN revolution. Fun, energy & vibes."
+    />
+    <meta
+      name="keywords"
+      content="ZentaCoin, meme coin, Solana, crypto, spiritual, $ZEN"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
     />
 
-    <link rel="canonical" href="https://zentacoin.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+      media="all"
+    />
+    <link rel="preload" href="https://kit.fontawesome.com/ebc1a445bd.js""
+    as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <script
+      src="https://kit.fontawesome.com/ebc1a445bd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <noscript
+      ><link rel="stylesheet" href="https://kit.fontawesome.com/ebc1a445bd.js"
+    /></noscript>
+
+    <link rel="canonical" href="https://zentacoin.io/" />
 
     <meta
       property="og:title"
@@ -24,7 +70,7 @@
       property="og:image"
       content="https://res.cloudinary.com/dijpy2mob/image/upload/v1753130109/ZENTforNav_mpbq1k.png"
     />
-    <meta property="og:url" content="https://zentacoin.com" />
+    <meta property="og:url" content="https://zentacoin.io" />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +93,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "ZentaCoin",
-        "url": "https://zentacoin.com",
+        "url": "https://zentacoin.io",
         "logo": "https://res.cloudinary.com/dijpy2mob/image/upload/v1753130109/ZENTforNav_mpbq1k.png",
         "sameAs": [
           "https://x.com/Zentacoin",
@@ -57,32 +103,54 @@
       }
     </script>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/android-chrome-192x192.png"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        background: #000;
+        color: #fff;
+      }
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+    </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="style.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet';"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+    <noscript><link rel="stylesheet" href="style.min.css" /></noscript>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-XXXXXXXXXX");
+    </script>
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
-        <img src="images/ZENTforNav.png" height="60px" alt="Logo" />
+        <picture>
+          <source srcset="images/ZENTforNav.webp" type="image/webp" />
+          <img src="images/ZENTforNav.png" height="60px" alt="Logo" />
+        </picture>
         <button class="menu-toggle" id="menuToggle">
           <span></span>
           <span></span>
@@ -101,9 +169,12 @@
     <section class="hero" id="home">
       <div class="video-background">
         <video autoplay muted loop playsinline>
+          <source src="./images/nwAnimatBG.webm" type="video/webm" />
           <source src="./images/nwAnimatBG.mp4" type="video/mp4" />
-
-          <img src="./images/hero2bg.jpg" alt="Background fallback" />
+          <picture>
+            <source srcset="./images/hero2bg.webp" type="image/webp" />
+            <img src="./images/hero2bg.jpg" alt="Background fallback" />
+          </picture>
         </video>
         <div class="video-overlay"></div>
       </div>
@@ -123,11 +194,14 @@
           </div>
         </div>
         <div class="hero-image">
-          <img
-            src="./images/ZENT 1.png"
-            alt="ZentaCoin Logo"
-            class="coin-logo"
-          />
+          <picture>
+            <source srcset="./images/ZENT1.webp" type="image/webp" />
+            <img
+              src="./images/ZENT1.png"
+              alt="ZentaCoin Logo"
+              class="coin-logo"
+            />
+          </picture>
         </div>
       </div>
     </section>
@@ -194,11 +268,14 @@
 
           <div class="about-image feature-item">
             <div class="image-container hover-effect">
-              <img
-                src="./images/about image.png"
-                alt="Zenta Coin Ecosystem"
-                class="glowing-image"
-              />
+              <picture>
+                <source srcset="./images/aboutimage.webp" type="image/webp" />
+                <img
+                  src="./images/aboutimage.png"
+                  alt="Zenta Coin Ecosystem"
+                  class="glowing-image"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -332,11 +409,14 @@
           <div class="tokenomics-product-grid">
             <div class="tokenomics-product-card">
               <div class="tokenomics-product-icon">
-                <img
-                  src="images/Enso.png"
-                  alt="Total Supply"
-                  class="zen-icon"
-                />
+                <picture>
+                  <source srcset="images/Enso.webp" type="image/webp" />
+                  <img
+                    src="images/Enso.png"
+                    alt="Total Supply"
+                    class="zen-icon"
+                  />
+                </picture>
               </div>
               <div class="tokenomics-product-content">
                 <h3>Total Supply</h3>
@@ -347,7 +427,10 @@
 
             <div class="tokenomics-product-card">
               <div class="tokenomics-product-icon">
-                <img src="images/Lotus.png" alt="Security" class="zen-icon" />
+                <picture>
+                  <source srcset="images/Lotus.webp" type="image/webp" />
+                  <img src="images/Lotus.png" alt="Security" class="zen-icon" />
+                </picture>
               </div>
               <div class="tokenomics-product-content">
                 <h3>Security</h3>
@@ -360,7 +443,10 @@
 
             <div class="tokenomics-product-card">
               <div class="tokenomics-product-icon">
-                <img src="images/yingyang.png" alt="Taxes" class="zen-icon" />
+                <picture>
+                  <source srcset="images/yingyang.webp" type="image/webp" />
+                  <img src="images/yingyang.png" alt="Taxes" class="zen-icon" />
+                </picture>
               </div>
               <div class="tokenomics-product-content">
                 <h3>Tax Free</h3>
@@ -483,7 +569,7 @@
         </h2>
 
         <div class="social-links">
-          <a href="http://t.me/zentacoin" class="social-link telegram">
+          <a href="https://t.me/zentacoin" class="social-link telegram">
             <i class="fab fa-telegram-plane"></i>
             <span>Telegram</span>
           </a>
@@ -495,21 +581,22 @@
 
           <a
             href="https://www.instagram.com/zentacoin/"
-            class="social-link discord"
+            class="social-link instagram"
           >
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
+            <i class="fa-brands fa-instagram"></i>
+             <span>Instagram</span>
           </a>
         </div>
       </div>
+ 
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-logo">
             <span class="zen-char">ZEN</span><span class="ta-char">TA</span
             ><span class="coin-char">COIN</span>
+        
           </div>
 
           <div class="footer-links">
@@ -529,6 +616,6 @@
       <div class="footer-orb"></div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.min.js" defer></script>
   </body>
 </html>

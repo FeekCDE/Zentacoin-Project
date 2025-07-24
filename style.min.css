@@ -1275,24 +1275,26 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .social-link {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none; 
   transition: all 0.4s ease;
   color: var(--text);
+  padding: 20px;
 }
 
 .social-link i {
   font-size: 3rem;
   margin-bottom: 15px;
   transition: all 0.4s ease;
-  width: 80px;
-  height: 80px;
-  display: flex;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -1305,34 +1307,30 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity 0.3s ease;
 }
 
-.social-link:hover i {
+.social-link:hover {
   transform: translateY(-5px);
+  pointer-events: auto;
+}
+
+.social-link:hover i {
+  box-shadow: 0 10px 20px rgba(37, 244, 238, 0.2);
 }
 
 .social-link:hover span {
+  text-decoration: underline;
   opacity: 1;
 }
 
 .telegram i {
   color: #0088cc;
-  background: rgba(0, 136, 204, 0.1);
-  border: 1px solid rgba(0, 136, 204, 0.2);
 }
 
 .twitter i {
   color: #1da1f2;
-  background: rgba(29, 161, 242, 0.1);
-  border: 1px solid rgba(29, 161, 242, 0.2);
 }
 
-.discord i {
-  color: #7289da;
-  background: rgba(114, 137, 218, 0.1);
-  border: 1px solid rgba(114, 137, 218, 0.2);
-}
-
-.social-link:hover i {
-  box-shadow: 0 10px 20px rgba(37, 244, 238, 0.2);
+.instagram i {
+  color: #f05d8b;
 }
 
 /* Footer Section */
